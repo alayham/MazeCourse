@@ -4,23 +4,32 @@ using UnityEngine;
 
 public class DoorAnimations : MonoBehaviour {
 
+    public int QuestionID = -1;
+
     Animator animator;
+    ScreenActions panel;
 
     private void OnTriggerEnter(Collider other)
     {
-        animator.SetTrigger("Open");
+        if (animator.GetBool("IsUnlocked"))
+            animator.SetTrigger("Open");
+        else
+            panel.Door = this;
     }
 
     private void OnTriggerExit(Collider other)
     {
-        animator.SetTrigger("Close");
+        if (animator.GetBool("IsUnlocked"))
+            animator.SetTrigger("Close");
+        else
+            panel.Door = null;
     }
 
     // Use this for initialization
     void Start () {
         animator = GetComponentInChildren<Animator>();
-        animator.SetBool("IsUnlocked", true);
-	}
+        panel = GameObject.Find("Canvas").GetComponent<ScreenActions>();
+    }
 	
 	// Update is called once per frame
 	void Update () {

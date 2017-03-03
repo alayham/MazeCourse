@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4905377528431748}
   - component: {fileID: 65437784305164628}
   - component: {fileID: 95711872997348620}
+  - component: {fileID: 114978074523070732}
   m_Layer: 0
   m_Name: Door With Collider
   m_TagString: Untagged
@@ -181,3 +182,14 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114978074523070732
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1082256974011376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b7457144cf9d4543b436432de86c552, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

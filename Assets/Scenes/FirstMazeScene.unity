@@ -420,6 +420,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8305b0eb1b03c3542807fa8d13481803, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text: {fileID: 1479290233}
+  inputfield: {fileID: 1729547787}
 --- !u!1 &334497598
 GameObject:
   m_ObjectHideFlags: 0
@@ -1090,7 +1092,18 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 296642786}
+        m_MethodName: CheckAnswer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.InputField+OnChangeEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
@@ -1245,6 +1258,21 @@ Prefab:
     - target: {fileID: 4905377528431748, guid: 50a48d55a78542f4d8f07bd099232ee6, type: 2}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114978074523070732, guid: 50a48d55a78542f4d8f07bd099232ee6,
+        type: 2}
+      propertyPath: QuestionID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 65437784305164628, guid: 50a48d55a78542f4d8f07bd099232ee6,
+        type: 2}
+      propertyPath: m_Size.z
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 65437784305164628, guid: 50a48d55a78542f4d8f07bd099232ee6,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 50a48d55a78542f4d8f07bd099232ee6, type: 2}

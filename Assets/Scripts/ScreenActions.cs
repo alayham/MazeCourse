@@ -45,8 +45,10 @@ public class ScreenActions : MonoBehaviour {
         set
         {
             door = value;
-            if (canShow())
+            if (canShow()) { 
                 show();
+                CheckAnswer();
+            }
             else
                 hide();
         }
